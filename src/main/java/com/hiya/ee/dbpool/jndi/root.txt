@@ -1,0 +1,14 @@
+（1）、在Web项目的WebRoot目录下的META-INF目录创建一个context.xml文件
+（2）、在context.xml文件配置tomcat服务器的数据源
+ 1 <Context>
+ 2    <Resource 
+ 3        name="jdbc/datasource" 
+ 4        auth="Container"
+ 5        type="javax.sql.DataSource" 
+ 6        username="root" 
+ 7        password="XDP"
+ 8        driverClassName="com.mysql.jdbc.Driver" 
+ 9        url="jdbc:mysql://localhost:3306/jdbcstudy"
+10        maxActive="8" 
+11        maxIdle="4"/>
+12 </Context>
